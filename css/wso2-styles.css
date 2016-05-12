@@ -1,0 +1,85 @@
+/* Global */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 1em; font: inherit; vertical-align: baseline; }
+
+body { font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 1em; line-height: 1.70em; background-color:#ffffff; background-image: url(../images/header-banner-bg.jpg); background-position: center top; background-repeat: no-repeat; background-attachment: fixed; }
+
+/*Text styles*/
+p { color: #444444; }
+strong, th { font-weight: 700; }
+p,  h2, h3, h4, ul, ol { margin: .5em 0; }
+h1 { font-size: 3em; font-weight: 800; font-style: normal; color: #404041; line-height: 1.5em; margin: 0 0 .5em; }
+h2 { font-size: 2.0em; font-weight: 700; font-style: normal; color: #404041; line-height: 1.5em; }
+h3 { font-size: 1.5em; font-weight: 600; font-style: normal; color: #404041; line-height: 1.5em; }
+h4 { font-size: 1.2em; font-weight: 700; font-style: normal; color: #404041; line-height: 1.5em; margin: .5em 0 0; }
+h5 { font-size: 1.1em; font-weight: 400; font-style: normal; color: #404041; line-height: 1.5em; }
+
+
+/*List styles*/
+ul, ol { padding: 0px 0px 0px 0px; margin: 1em 1.5em; }
+li { padding: 0 0 .5em .5em; }
+ul.cVerticleList { list-style: none; margin: 0px; padding: 0px; }
+ul.cVerticleList li { padding: .7em  0; border-bottom: solid 1px #dddddd;  }
+ul.cVerticleList li.cBottom { border-bottom: 0px; }
+ul.cHorizontalList { list-style: none; padding: 0px; margin: 0px; }
+ul.cHorizontalList li { padding: 0 1em;  position: relative; display: inline-block; border-left: solid 1px #b3b3b3; border-bottom: 0; }
+ul.cHorizontalList li.cLeft { border-left: 0px; padding-left: 0; }
+
+/*Link styles*/
+a { color: #0d6fc4; text-decoration: none;  }
+a:hover { padding-bottom: 0px; border-bottom: solid 1px #0d6fc4; text-decoration: none; color: #f47b20; }
+a:visited { text-decoration: none; color: #0d6fc4; }
+a:focus { text-decoration: none; outline: none; color: #f47b20; }
+a.cBookmark { display: inline-block; position: absolute; margin: -170px 0px 0px; }
+
+/*Image styles*/
+img { max-width: 100%; }
+.cDiagramMobile { display: none; }
+
+/*Responsive video styles*/
+.responsive-video { position: relative; padding-bottom: 56.25%; padding-top: 60px; overflow: hidden; border: solid 1px #cccccc; }
+.responsive-video iframe, .responsive-video object, .responsive-video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.cClear { clear: both; }
+
+/*Bootstrap Overide styles*/
+.row { padding: 2.5em 0; margin-left: 0px; margin-right: 0px; background-color: #ffffff; }
+.container { max-width: 880px; }
+code { background-color: #ededed; border-radius: 4px; color: #666666; font-size: 95%; padding: 4px 10px; font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace; }
+
+.row:nth-of-type(2n+2) { background: #efefef none repeat scroll 0 0; }
+.table { background-color: #ffffff; }
+
+.cHeader { background: #000000 url("http://b.content.wso2.com/sites/all/2015-june-theme/navigation/bg-line.jpg") no-repeat scroll center bottom; text-align: center; padding: 1.5em 0; }
+.cHeader a:hover { border-bottom: 0; }
+
+.cIntro { background-color: rgba(0, 0, 0, .2) !important; }
+.cIntro h1 { color: #ffffff; border-bottom: solid 1px #f47b20; padding: 0 0 15px; }
+.cIntro p { font-size: 1.3em; line-height: 1.5em; color: #ffffff; }
+.cIntro a { color: #00c3ff; }
+.cIntro .cVerticleList li { font-size: 1.4em; }
+
+ol.cSteps { font-size: 1.4em; font-weight: 800; color: #999999; }
+ol.cSteps li p { font-size: .7em; font-weight: 400; }
+ol.cSteps li { border-bottom: 1px solid #cccccc; padding: 0.75em; }
+ol.cSteps li.cBottom { border-bottom: 0; }
+
+ol.cSubSteps { list-style-type: lower-alpha; font-size: 1em; font-weight: 600; }
+ol.cSubSteps li { border-bottom: 0; padding: 0 0 .25em .25em; }
+
+.cFooter { background-color: #000000 !important; padding: .75em 0; text-align: center; color: #ffffff; }
+.cFooter a { color: #ffffff; }
+
+a.cTopNav { z-index: 999; color: #ffffff; text-decoration: none; padding: 10px 10px 10px 12px; font-weight: 600; font-size: 130%; position: fixed; right: 0px; bottom: 150px; background-color: #333333; border-left: solid 1px #cccccc; border-top: solid 1px #cccccc; border-bottom: solid 1px #cccccc; }
+a.cTopNav:hover { background-color: #666666; }
