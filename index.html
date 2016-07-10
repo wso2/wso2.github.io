@@ -58,52 +58,6 @@
                 </div>
             </div>
         </div>
-        <a id="WSO2-Repositories"></a>
-        <div class="row cRowColored">
-             <div class="container">
-                 <div class="col-sm-12 col-md-12">
-                     <h2>Overview of the WSO2 repositories</h2>
-                    <p>The WSO2 source code is organized into separate repositories in <a href="https://github.com/wso2" target="_blank">GitHub</a>, and each WSO2 product is built using several of these repositories. Therefore, if you are interested in editing the source code, you need to first identify the repositories that you require. For the complete list of repositories used by WSO2 products, see <a href="github-repositories.html">WSO2 Git Repositories</a>. If you are still not sure which repositories you need, send an email to <a href="mailto:dev@wso2.org">dev@wso2.org</a>.</p>
-                    <p>There are two types of WSO2 repositories:</p>
-                    <ul>
-                        <li>
-                            <p><strong>Component-level repositories:</strong> A component repository consists of the source code relevant to a particular component. Each WSO2 product release is built using combinations of these component repositories. Therefore, if you want to do modifications to a particular function in a product, you need to clone the Git repositories relevant to that function. If you want to know more about component repositories and the tags used for a product release, send an email to dev@wso2.org.</p>
-                        </li>
-                        <li>
-                            <p><strong>Product-level repository:</strong> A product repository consists of the <strong>build scripts</strong> and <strong>profiles</strong> that are used for building the product. It also includes the <strong>integration test cases</strong>. For example, given below is the product repository for the WSO2 Identity Server 5.1.0 release. When you build this product repository, all the component repositories that are required for the IS 5.1.0 release will be automatically fetched from <a href="http://www.sonatype.org/nexus/" target="_blank">Nexus</a>. Therefore, you can simply clone this repository tag to your computer and <a href="using-maven.html">build it</a> to get a standard product pack.</p>
-                        </li>
-                    </ul>
-                    <table class="table table-bordered table-striped">
-                        <thead>
-                            <tr>
-                                <th>
-                                    Git Repository Name
-                                </th>
-                                <th>
-                                    Repository URL
-                                </th>
-                                <th>
-                                    Tag for IS 5.1.0 Release
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    product-is
-                                </td>
-                                <td>
-                                    <a href="https://github.com/wso2/product-is.git" target="_blank">https://github.com/wso2/product-is.git</a>
-                                </td>
-                                <td>
-                                    v5.1.0
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
         
         <a id="WSO2-GitHub-Guidelines"></a>
         <div class="row cRowColored">
