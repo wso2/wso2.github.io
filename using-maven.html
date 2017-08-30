@@ -123,6 +123,8 @@
                             </tr>
                         </tbody>
                     </table>
+                     <p><b>Note:</b> If you get the <a href="https://issues.apache.org/jira/browse/FELIX-3571">error</a> "Comparison method violates its general contract" while building the Carbon Kernel repository, use the <code>java.util.Arrays.useLegacyMergeSort</code> JVM parameter with the Maven command as follows:</p>
+                     <p><code>_JAVA_OPTIONS=-Djava.util.Arrays.useLegacyMergeSort=true mvn clean install</code></p>
                  </div>
              </div>
         </div>
