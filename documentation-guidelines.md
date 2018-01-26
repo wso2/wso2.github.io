@@ -1,19 +1,24 @@
-﻿Documenting a New Feature
-=========================
+Documentation Guidelines
+========================
+This document describes how to create documentation for your contributions to WSO2 products. It contains the following sections:
 
-When you contribute a feature to WSO2 products, you must include a feature document that fully describes the feature, how it’s used, the problems it solves, etc. The document should be in Markdown format and accompany your pull request. Following is a template for this feature document and what each section should include. 
+[Documenting a new feature](#documenting-a-new-feature)
+[Documenting a REST API](#documenting-a-rest-api)
+[Documenting a sample](#documenting-a-sample)
+[Guidelines for writing great documentation](#guidelines-for-writing-great-documentation)
+ 
+Documenting a new feature
+-------------------------
+When you contribute a feature to WSO2 products, you must include a feature document that fully describes the feature, how it’s used, the problems it solves, etc. The feature document should contain high-quality content that can be used as the foundation for the product documentation, marketing content, and training materials with minimal editing. For a list of resources to help you write the best possible content, see [Guidelines for writing great documentation](#guidelines-for-writing-great-documentation).
 
-The feature document should contain high-quality content that can be used as the foundation for the product documentation, marketing content, and training materials with minimal editing. For a list of resources to help you write the best possible content, see [Guidelines for writing great documentation](#guidelines-for-writing-great-documentation).
-
-Document template
------------------
-This section describes the structure of the feature documentation.
+The document should be in Markdown format and accompany your pull request. Following is a template for this feature document and what each section should include. 
 
 ### Description
 
 The introduction is your 30-second elevator pitch for your feature. Write a brief paragraph or two that summarizes the purpose and function of this feature. Start with a one- or two-sentence summary of what the feature does and/or what problem it solves. 
 
 You can give more descriptive information in a second paragraph. This paragraph should answer the questions: "What does this feature *do*?" and "*Why* would I use it?" If your feature has a range of functionality (installation, configuration, management, etc.), you can briefly mention them here and go into detail later in the subsequent sections.
+
 ### Usage
 Explain the user stories/scenarios that the feature applies to. 
 
@@ -67,7 +72,60 @@ Describe and show how to run the tests to ensure that the feature works right fr
 ### Troubleshooting & FAQs
 Address questions that are likely to be asked frequently by users. Outline common problems that users would encounter along with solutions. Explain how the users may get to the root of the problem through troubleshooting. A list of error codes resulting from the feature, problem logs with causes, and an exception table would help here. 
 
-## Guidelines for writing great documentation
+Documenting a REST API
+----------------------
+If you are adding a REST API to a WSO2 product, include a markdown file that covers the following information:
+
+- Introduction to the API. Should explain what the API does.
+- Parameters of the API. Should cover each parameter’s name, description, datatype, and default and fixed values (if any).
+- Request format.
+- Response format.
+- Sample request. For example, the Curl command.
+
+Documenting a sample
+--------------------
+When you add a sample to any WSO2 product, include a readme.md file that uses the following template. 
+
+### Title
+Use a meaningful name for the title of the sample so that the business use case addressed in the sample is clear. The title should also contain possible search terms.
+
+For example: 
+Poor title: Excel Sample
+Good title: Service Enabling the Data in an Excel Sheet
+
+### Introduction
+Explain the following as applicable:
+
+- The objective of the sample and the use case it demonstrates.
+- The technical concepts, or if the concept is already explained in the documentation, link to the relevant pages. Otherwise, provide an appropriate external reference. For example, when a sample demonstrates the usage of MTOM capability, explain or provide reference to what ‘MTOM’ is.
+- Assumptions you are making. One possible assumption is that the user knows certain industry standards and well-known technical concepts. We can state them here so that users are aware of what they are expected to know to follow the sample. 
+
+### Prerequisites
+- Additional software and databases required to run the sample, and how to download, install, and configure them. If already explained, link to the current doc or external sources.
+- Any packages or files (such as .jar files) to be installed and URLs to change.
+- Any existing config files that need to be changed and how.
+
+Wherever possible and appropriate, explain why the user needs each prerequisite. We want the users to understand the context of what they are doing along the way.
+
+### Building the sample
+Describe the aample file location and how to build the sample. (E.g., using Ant).
+
+### Executing the sample
+Give step-by-step instructions to execute the sample and view results. This section may include:
+
+- Sub-titles and diagrams as appropriate.
+- Configuration files and code blocks.
+- Management Console screenshots.
+- How to run any sample clients.
+- How to view results and screenshots of results.
+
+Wherever possible and appropriate, explain why they are taking the current step and what the results indicate. We want users to understand the context.
+
+### Conclusion/analysis of results
+Analyze the results and derive conclusions.
+
+Guidelines for writing great documentation
+------------------------------------------
 The following resources help you understand the standard conventions and best practices for writing technical documentation. These guidelines will help ensure that the feature document you submit is clear, accurate, easy to understand, and requires minimal editing before the content is used in the product documentation, marketing content, and training materials. 
 
 ### Fundamentals of technical writing
