@@ -2,10 +2,10 @@ Documentation Guidelines
 ========================
 This document describes how to create documentation for your contributions to WSO2 products. It contains the following sections:
 
-[Documenting a new feature](#documenting-a-new-feature)
-[Documenting a REST API](#documenting-a-rest-api)
-[Documenting a sample](#documenting-a-sample)
-[Guidelines for writing great documentation](#guidelines-for-writing-great-documentation)
+- [Documenting a new feature](#documenting-a-new-feature)
+- [Documenting a REST API](#documenting-a-rest-api)
+- [Documenting a sample](#documenting-a-sample)
+- [Guidelines for writing great documentation](#guidelines-for-writing-great-documentation)
  
 Documenting a new feature
 -------------------------
