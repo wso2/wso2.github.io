@@ -1,0 +1,165 @@
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cellery</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/ec.ico">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ site.baseurl }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/modernizr-2.8.3.min.js"></script>
+
+    <!-- Plugin CSS -->
+    <link href="{{ site.baseurl }}/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <script type="text/javascript" src="/js/highlight.pack.js"></script>
+    <script src="/js/cellery-common.js"></script>
+ 
+    <link href="{{ site.baseurl }}/css/cellery-io.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/cellery-io-docs.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+    <script src="/js/moment-2.22.0/moment.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    
+
+
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92163714-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-92163714-2');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PSL2TX4');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--<script src="../js/jquery-2.1.1.min.js"></script>-->
+    <!--<script src="../js/modernizr-2.8.3.min.js"></script>
+  	<script type="text/javascript" src="../js/highlight.pack.js"></script>-->
+
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/modernizr-2.8.3.min.js"></script>
+
+    <script>
+        var base_url = "";
+        var base_download_url = "";
+        var archived_versions_json = "";
+        var releaseNoteFilename = "";
+    </script>
+    <link rel="stylesheet" href="https://use.typekit.net/son4ymv.css" />
+    <link rel="stylesheet" href="/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="/css/theme_extra.css" type="text/css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+    <script type="text/javascript" src="../js/highlight.pack.js"></script>
+    <script src="/js/cellery-common.js"></script>
+    <script src="/js/jquery.validate.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="/css/cellery-io.css?200618">
+    <link rel="stylesheet" href="/css/cellery-io-docs.css?200618">     
+    <script>
+        $(document).ready(function() {
+            $("#slackSubscribeButton").click(function(event) {
+                event.preventDefault();
+                inviteSlackUser();
+            });
+            $('#email').on('keypress', function(event) {
+                if (event.which === 13) {
+                    event.preventDefault();
+                    $(this).attr("disabled", "disabled");
+                    inviteSlackUser();
+                    $(this).removeAttr("disabled");
+                }
+            });
+        });
+
+        function inviteSlackUser() {
+            $('#subscribeMessage').html('');
+            var email = $("#email").val();
+
+            if (email == "") {
+                $('#email').val('');
+                $("#email").attr("placeholder","Please enter your email.");
+            } else if (!isEmail(email)) {
+                $('#email').val('');
+                $("#email").attr("placeholder","Please enter a valid email.");
+            } else {
+                $('#email').val('');
+                $("#email").attr("placeholder","Processing...");
+                $.ajax({
+                    type: 'GET',
+                    url: '/slackServiceCall.php?email='+email,
+                    success: function(msg) {
+                        if (msg == 1) {
+                            $('#email').val('');
+                            $("#email").attr("placeholder","Your invitation has been sent.");
+                        } else {
+                            $('#email').val('');
+                            $("#email").attr("placeholder",msg);
+                        }
+                    }
+                });
+            }
+            return;
+        }
+    </script>
+  
+
+
+
