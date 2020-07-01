@@ -1,4 +1,4 @@
-Words Matter
+Words Matter!
 ============
 
 Following terms are changed for inclusivity 
